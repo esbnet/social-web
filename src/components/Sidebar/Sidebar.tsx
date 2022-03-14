@@ -2,16 +2,17 @@ import { ReactNode } from 'react';
 
 import { Container } from './styles';
 
-interface HomeProps {
+interface SidebarProps {
   children: ReactNode;
 }
 
-export function Home({ children }: HomeProps) {
+function Sidebar({ children }: SidebarProps) {
   return (
     <Container>
-      <h1>This is home page</h1>
+      <h1>Sidebar</h1>
       {children}
     </Container>
   );
 };
 
+export default Sidebar;

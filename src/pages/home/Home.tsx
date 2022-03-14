@@ -1,16 +1,19 @@
-import { ReactNode } from 'react';
-
+import { Feed } from '../../components/Feed/Feed';
+import { Rightbar } from '../../components/Rightbar/Rightbar';
+import { Sidebar } from '../../components/Sidebar/Sidebar';
+import { Topbar } from '../../components/Topbar/Topbar';
 import { Container } from './styles';
 
-interface HomeProps {
-  children: ReactNode;
-}
 
-export function Home({ children }: HomeProps) {
+export function Home() {
   return (
-    <Container>
-      <h1>Home</h1>
-      {children}
-    </Container>
+    <>
+      <Topbar />
+      <Container>
+        <Sidebar />
+        <Feed />
+        <Rightbar />
+      </Container>
+    </>
   );
 };

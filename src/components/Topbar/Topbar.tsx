@@ -2,7 +2,7 @@
 import { Container } from './styles';
 import { Search, Person, Notifications, Chat } from '@material-ui/icons';
 
-function Topbar() {
+export function Topbar() {
   return (
     <Container>
 
@@ -45,5 +45,3 @@ function Topbar() {
 
   );
 };
-
-export default Topbar;

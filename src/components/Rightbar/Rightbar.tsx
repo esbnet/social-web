@@ -1,18 +1,9 @@
-import { ReactNode } from 'react';
-
 import { Container } from './styles';
 
-interface RightbarProps {
-  children: ReactNode;
-}
-
-function Rightbar({ children }: RightbarProps) {
+export function Rightbar() {
   return (
-    <Container>
+    <Container className='rightbar'>
       <h1>Rightbar</h1>
-      {children}
     </Container>
   );
 };
-
-export default Rightbar;

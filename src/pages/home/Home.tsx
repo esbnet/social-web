@@ -4,7 +4,6 @@ import { Sidebar } from '../../components/Sidebar/Sidebar';
 import { Topbar } from '../../components/Topbar/Topbar';
 import { Container } from './styles';
 
-
 export function Home() {
   return (
     <>

@@ -2,6 +2,7 @@ import { Container } from './styles';
 import { MoreVert } from '@material-ui/icons';
 
 import { Users } from '../../dummyData';
+import { useState } from 'react';
 
 interface PostProps {
   id: number;
@@ -14,10 +15,19 @@ interface PostProps {
 }
 
 export function Post(post: PostProps) {
-  
+
   const user = Users.find(u => u.id === post.userId);
 
+  const [likes, setLikes] = useState(post.like);
+  const [isLiked, setIsLiked] = useState(false);
+
+  function likeHandler() {
+    setLikes(isLiked ? likes - 1 : likes + 1);
+    setIsLiked(!isLiked);
+  }
+
   return (
+
     <Container>
       <div className="postWrapper">
         <div className="postTop">
@@ -36,9 +46,9 @@ export function Post(post: PostProps) {
         </div>
         <div className="postBottom">
           <div className="postBottonLeft">
-            <img className='postLikeIcon' src="/assets/like.png" alt="" />
-            <img className='postLikeIcon' src="/assets/heart.png" alt="" />
-            <span className="postLikeCounter">{post.like} pessoa(s) gosta(ram)</span>
+            <img className='postLikeIcon' src="/assets/like.png" alt="" onClick={likeHandler} />
+            <img className='postLikeIcon' src="/assets/heart.png" alt="" onClick={likeHandler} />
+            <span className="postLikeCounter">{likes} pessoa(s) gosta(ram)</span>
           </div>
           <div className="postBottonRight">
             <span className="postCommentCounter">{post.comment} comentário(s)</span>

@@ -69,38 +69,6 @@ export function Sidebar() {
             <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
             <span className="sidebarFriendName">Jane Doe</span>
           </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
         </ul>
       </div>
     </Container>

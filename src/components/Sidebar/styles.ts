@@ -15,11 +15,9 @@ export const Container = styled.div`
   ::-webkit-scrollbar-thumb {
     background-color: rgb(179,179,179);
   }
-  
 
   .sidebarWrapper {
     padding: 20px;
-    background: yellowgreen;
 
     .sidebarList {
       padding: 0;
@@ -74,7 +72,6 @@ export const Container = styled.div`
 
       .sidebarFriendName {
         font-size: 14px;
-        color: #fff;
       }
 
     }

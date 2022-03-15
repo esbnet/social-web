@@ -9,6 +9,8 @@ import {
   Event,
   School,
 } from '@material-ui/icons';
+import { Users } from '../../dummyData';
+import { CloseFriends } from '../CloseFriend';
 import { Container } from './styles';
 
 export function Sidebar() {
@@ -57,18 +59,11 @@ export function Sidebar() {
         <button className='sidebarButton'>Show more ...</button>
         <hr className='sidebarSeparator' />
         <ul className="sidebarFriendList">
-        <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
-          <li className="sidebarFriendListItem">
-            <img src="/assets/person/2.jpeg" alt="" className="sidebarFriendImage" />
-            <span className="sidebarFriendName">Jane Doe</span>
-          </li>
+
+          {Users.map((user, index) => (
+            <CloseFriends key={index} {...user} />
+          ))}
+
         </ul>
       </div>
     </Container>

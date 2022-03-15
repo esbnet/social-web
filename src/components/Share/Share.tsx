@@ -29,7 +29,7 @@ export function Share() {
               <span className='shareOptionText'>Emotions</span>
             </div>
           </div>
-          <button className='shareButton'>Share</button>
+          <button className='shareButton'>Compartilhar</button>
         </div>
       </div>
     </Container>

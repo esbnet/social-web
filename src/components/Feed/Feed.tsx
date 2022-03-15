@@ -1,9 +1,20 @@
+import { Share } from '../Share/Share';
+import { Post } from '../Post/Post';
 import { Container } from './styles';
 
 export function Feed() {
   return (
     <Container className='feed'>
-      <h1>Feed</h1>
+      <div className="feedWrapper">
+        <Share />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+        <Post />
+
+      </div>
     </Container>
   );
 };

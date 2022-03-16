@@ -1,8 +1,9 @@
-import { Container } from './styles';
 import { MoreVert } from '@material-ui/icons';
+import { useState } from 'react';
+
+import { Container } from './styles';
 
 import { Users } from '../../dummyData';
-import { useState } from 'react';
 
 interface PostProps {
   id: number;
@@ -13,6 +14,8 @@ interface PostProps {
   like: number;
   comment: number;
 }
+
+const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
 
 export function Post(post: PostProps) {
 
@@ -32,7 +35,7 @@ export function Post(post: PostProps) {
       <div className="postWrapper">
         <div className="postTop">
           <div className="postTopLeft">
-            <img className='postProfileImage' src={user?.profilePicture} alt="Imagem do post" />
+            <img className='postProfileImage' src={publicFolder + post.photo} alt="Imagem do post" />
             <span className="postUserName">{user?.username}</span>
             <span className="postDate">{post.date}</span>
           </div>
@@ -42,12 +45,12 @@ export function Post(post: PostProps) {
         </div>
         <div className="postCenter">
           <span className="postText">{post.desc}</span>
-          <img className='postImage' src={post.photo} alt="" />
+          <img className='postImage' src={publicFolder + post.photo} alt="" />
         </div>
         <div className="postBottom">
           <div className="postBottonLeft">
-            <img className='postLikeIcon' src="/assets/like.png" alt="" onClick={likeHandler} />
-            <img className='postLikeIcon' src="/assets/heart.png" alt="" onClick={likeHandler} />
+            <img className='postLikeIcon' src={publicFolder + 'like.png'} alt="" onClick={likeHandler} />
+            <img className='postLikeIcon' src={publicFolder + 'heart.png'} alt="" onClick={likeHandler} />
             <span className="postLikeCounter">{likes} pessoa(s) gosta(ram)</span>
           </div>
           <div className="postBottonRight">

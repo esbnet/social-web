@@ -9,18 +9,20 @@ interface ProfileProps {
   username: string;
 }
 
+const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
+
 export function Rightbar(profile: ProfileProps) {
 
   const HomeRightBar = () => {
     return (
       <>
         <div className="birthdayContainer">
-          <img className='birthdayImage' src="/assets/gift.png" alt="" />
+          <img className='birthdayImage' src={publicFolder + "gift.png"} alt="" />
           <span className="birthdayText">
             <b>Edmilson Soares</b> e mais <b>3 amigos</b> fazer aniverãrio hoje
           </span>
         </div>
-        <img className="rightbarAd" src='/assets/ad.png' alt='' />
+        <img className="rightbarAd" src={publicFolder + "ad.png"} alt='' />
         <h4 className="rightbarTitle">Amigos on-line</h4>
         <ul className='rightbarFriendList'>
 
@@ -56,27 +58,27 @@ export function Rightbar(profile: ProfileProps) {
         <h4 className="rightbarTitle">Amigos</h4>
         <div className="rightbarFollowings">
           <div className="rightbarFollowing">
-            <img src='/assets/person/1.jpeg' className="rightbarFollowingImage" alt='' />
+            <img src={publicFolder + 'peron/1.jpeg'} className="rightbarFollowingImage" alt='' />
             <span className="rightbarFollowingName">John Fruisciante</span>
           </div>
           <div className="rightbarFollowing">
-            <img src='/assets/person/2.jpeg' className="rightbarFollowingImage" alt='' />
+            <img src={publicFolder + 'peron/2.jpeg'} className="rightbarFollowingImage" alt='' />
             <span className="rightbarFollowingName">John Fruisciante</span>
           </div>
           <div className="rightbarFollowing">
-            <img src='/assets/person/3.jpeg' className="rightbarFollowingImage" alt='' />
+            <img src={publicFolder + 'peron/3.jpeg'} className="rightbarFollowingImage" alt='' />
             <span className="rightbarFollowingName">John Fruisciante</span>
           </div>
           <div className="rightbarFollowing">
-            <img src='/assets/person/4.jpeg' className="rightbarFollowingImage" alt='' />
+            <img src={publicFolder + 'peron/4.jpeg'} className="rightbarFollowingImage" alt='' />
             <span className="rightbarFollowingName">John Fruisciante</span>
           </div>
           <div className="rightbarFollowing">
-            <img src='/assets/person/5.jpeg' className="rightbarFollowingImage" alt='' />
+            <img src={publicFolder + 'peron/5.jpeg'} className="rightbarFollowingImage" alt='' />
             <span className="rightbarFollowingName">John Fruisciante</span>
           </div>
           <div className="rightbarFollowing">
-            <img src='/assets/person/6.jpeg' className="rightbarFollowingImage" alt='' />
+            <img src={publicFolder + 'peron/6.jpeg'} className="rightbarFollowingImage" alt='' />
             <span className="rightbarFollowingName">John Fruisciante</span>
           </div>
         </div>

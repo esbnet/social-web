@@ -1,12 +1,14 @@
 import { Container } from './styles';
 import { PermMedia, Label, Room, EmojiEmotions } from '@material-ui/icons';
 
+const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
+
 export function Share() {
   return (
     <Container>
       <div className="shareWrapper">
         <div className="shareTop">
-          <img className='shareProgileImgage' src="/assets/person/1.jpeg" alt="" />
+          <img className='shareProgileImgage' src={publicFolder + "person/1.jpeg"} alt="" />
           <input placeholder='What is in your mind?' className="shareInput" />
         </div>
         <hr className="shareSeparator" />

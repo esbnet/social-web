@@ -1,9 +1,12 @@
+import { Login } from './pages/Login/Login';
+import { Profile } from './pages/Profile/Profile';
+import { Register } from './pages/Register/Register';
+import {
+  BrowserRouter, Route, Routes
+} from 'react-router-dom';
+
 import './App.css';
 import { Home } from './pages/Home/Home';
-// import { Login } from './pages/Login/Login';
-// import { Profile } from './pages/Profile/Profile';
-// import { Register } from './pages/Register/Register';
-
 
 interface ProfileProps {
   id: number;
@@ -11,11 +14,17 @@ interface ProfileProps {
   username: string;
 }
 
-function App( profile: ProfileProps) {
+function App(profile: ProfileProps) {
   return (
-    <div className="App">
-      <Home {...profile}/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Home {...profile}/>} />
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Register />} />
+        <Route path='/profile/:username' element={<Profile {...profile} />} />
+      </Routes>
+
+    </BrowserRouter>
   );
 }
 

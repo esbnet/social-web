@@ -10,6 +10,8 @@ interface ProfileProps {
   username: string;
 }
 
+const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
+
 export function Profile(profile: ProfileProps) {
 
   return (
@@ -20,8 +22,8 @@ export function Profile(profile: ProfileProps) {
         <div className="profileRight">
           <div className="profileRightTop">
             <div className="profileCover">
-              <img className='profileCoverImage' src="assets/post/3.jpeg" alt="" />
-              <img className='profileUserImage' src="assets/person/7.jpeg" alt="" />
+              <img className='profileCoverImage' src={publicFolder + "post/3.jpeg"} alt="" />
+              <img className='profileUserImage' src={publicFolder + "person/7.jpeg"} alt="" />
             </div>
             <div className="profileInfo">
               <h4 className="profileInfoName">{profile.profilePicture}</h4>

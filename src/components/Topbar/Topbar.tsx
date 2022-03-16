@@ -2,6 +2,8 @@
 import { Container } from './styles';
 import { Search, Person, Notifications, Chat } from '@material-ui/icons';
 
+const publicFolder = process.env.REACT_APP_PUBLIC_FOLDER;
+
 export function Topbar() {
   return (
     <Container>
@@ -38,7 +40,7 @@ export function Topbar() {
             <span className="topbarIconBadge ">1</span>
           </div>
         </div>
-        <img src="/assets/person/1.jpeg" alt="" className="topbarImage " />
+        <img src={publicFolder + "person/1.jpeg"} alt="" className="topbarImage " />
       </div>
 
     </Container>

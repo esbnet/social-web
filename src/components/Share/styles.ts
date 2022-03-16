@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 	width: 100%;
-	height: 170px;
 	border-radius: 10px;
 	-webkit-box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
 	box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.1);
@@ -19,11 +18,12 @@ export const Container = styled.div`
 				height: 50px;
 				border-radius: 50%;
 				object-fit: cover;
-				margin-right: 10px;
+				margin-left: 20px;
+				margin-right: 20px;
 			}
 
 			.shareInput {
-				width: 100%;
+				width: 80%;
 				height: 100%;
 				border: none;
 				outline: none;

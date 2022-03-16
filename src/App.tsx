@@ -1,5 +1,6 @@
 import './App.css';
 import { Home } from './pages/Home/Home';
+import { Login } from './pages/Login/Login';
 import { Profile } from './pages/Profile/Profile';
 
 
@@ -12,7 +13,8 @@ interface ProfileProps {
 function App( profile: ProfileProps) {
   return (
     <div className="App">
-      <Profile {...profile}/>
+      {/* <Profile {...profile}/> */}
+      <Login/>
     </div>
   );
 }

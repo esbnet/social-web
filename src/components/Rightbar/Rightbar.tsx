@@ -88,7 +88,7 @@ export function Rightbar(profile: ProfileProps) {
     <Container className='rightbar'>
       <div className="rightBarWrapper">
 
-        {profile.id === 2 ? HomeRightBar() : ProfileRightBar()}
+        {profile ? HomeRightBar() : ProfileRightBar()}
 
       </div>
     </Container >

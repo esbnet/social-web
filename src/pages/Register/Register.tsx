@@ -1,6 +1,6 @@
 import { Container } from './styles';
 
-export function Login() {
+export function Register() {
   return (
     <Container>
       <div className="loginWrapper">
@@ -12,11 +12,12 @@ export function Login() {
         </div>
         <div className="loginRight">
           <div className="loginBox">
+            <input placeholder="Usuário" className="loginInput" />
             <input placeholder="Email" className="loginInput" />
             <input placeholder="Senha" className="loginInput" />
-            <button className="loginButton">Entrar</button>
-            <span className='loginForgot'>Esqueci a senha</span>
-            <button className="loginRegisterButton">Criar conta de acesso</button>
+            <input placeholder="Confirme a Senha" className="loginInput" />
+            <button className="loginButton">Cadastrar</button>
+            <button className="loginRegisterButton">Entrar em um conta</button>
           </div>
         </div>
       </div>

@@ -1,7 +1,8 @@
 import './App.css';
 import { Home } from './pages/Home/Home';
-import { Login } from './pages/Login/Login';
-import { Profile } from './pages/Profile/Profile';
+// import { Login } from './pages/Login/Login';
+// import { Profile } from './pages/Profile/Profile';
+// import { Register } from './pages/Register/Register';
 
 
 interface ProfileProps {
@@ -13,8 +14,7 @@ interface ProfileProps {
 function App( profile: ProfileProps) {
   return (
     <div className="App">
-      {/* <Profile {...profile}/> */}
-      <Login/>
+      <Home {...profile}/>
     </div>
   );
 }

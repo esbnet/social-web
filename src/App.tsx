@@ -1,11 +1,18 @@
 import './App.css';
 import { Home } from './pages/Home/Home';
-import { Profile } from './pages/Profile';
+import { Profile } from './pages/Profile/Profile';
 
-function App() {
+
+interface ProfileProps {
+  id: number;
+  profilePicture: string;
+  username: string;
+}
+
+function App( profile: ProfileProps) {
   return (
     <div className="App">
-      <Profile />
+      <Profile {...profile}/>
     </div>
   );
 }

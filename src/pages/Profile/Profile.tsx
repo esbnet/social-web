@@ -4,7 +4,14 @@ import { Sidebar } from '../../components/Sidebar/Sidebar';
 import { Topbar } from '../../components/Topbar/Topbar';
 import { Container } from './styles';
 
-export function Profile() {
+interface ProfileProps {
+  id: number;
+  profilePicture: string;
+  username: string;
+}
+
+export function Profile(profile: ProfileProps) {
+
   return (
     <>
       <Topbar />
@@ -17,13 +24,13 @@ export function Profile() {
               <img className='profileUserImage' src="assets/person/7.jpeg" alt="" />
             </div>
             <div className="profileInfo">
-              <h4 className="profileName">Edmilson Soares</h4>
+              <h4 className="profileInfoName">{profile.profilePicture}</h4>
               <span className="profileInfoDesc">My bio...</span>
             </div>
           </div>
           <div className="profileRightBottom">
             <Feed />
-            <Rightbar />
+            <Rightbar {...profile} />
           </div>
         </div>
       </Container>

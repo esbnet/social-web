@@ -7,7 +7,7 @@ export function Topbar() {
     <Container>
 
       <div className="topbarLeft">
-        <span className="logo">Lamasocial</span>
+        <span className="logo">NenoLandia</span>
       </div>
       <div className="topbarCenter">
         <div className="searchBar ">

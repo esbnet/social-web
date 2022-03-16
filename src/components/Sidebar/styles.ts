@@ -5,6 +5,8 @@ export const Container = styled.div`
   flex: 3;
   height: calc(100vh - 50px);
   overflow-y: scroll;
+  position: sticky;
+  top: 50px;
 
   ::-webkit-scrollbar {
     width: 5px;
@@ -53,28 +55,10 @@ export const Container = styled.div`
   }
 
   .sidebarFriendList {
+    
     padding: 0;
     amrgin: 0;
     list-style: none;
-
-    .sidebarFriendListItem {
-      display: flex;  
-      align-itens: center;
-      margin-bottom: 15px;
-
-      .sidebarFriendImage {
-        width: 32px;
-        height: 32px;
-        border-radius: 50%;
-        object-fit: cover;
-        margin-right: 10px;
-      }
-
-      .sidebarFriendName {
-        font-size: 14px;
-      }
-
-    }
 
   }
 

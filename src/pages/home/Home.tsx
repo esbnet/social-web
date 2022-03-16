@@ -4,15 +4,21 @@ import { Sidebar } from '../../components/Sidebar/Sidebar';
 import { Topbar } from '../../components/Topbar/Topbar';
 import { Container } from './styles';
 
+interface ProfileProps {
+  id: number;
+  profilePicture: string;
+  username: string;
+}
 
-export function Home() {
+
+export function Home(profile: ProfileProps) {
   return (
     <>
       <Topbar />
       <Container>
         <Sidebar />
         <Feed />
-        <Rightbar />
+        <Rightbar {...profile}/>
       </Container>
     </>
   );

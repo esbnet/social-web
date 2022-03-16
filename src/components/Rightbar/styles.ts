@@ -29,47 +29,67 @@ export const Container = styled.div`
 		}
 
 		.rightbarTitle {
-      margin-bottom: 10px;
+			margin-bottom: 10px;
 		}
 
 		.rightbarFriendList {
 			padding: 0;
 			margin: 0;
 			lsit-style: none;
+		}
+	}
 
-			.rightbarFriend {
-				display: flex;
-				align-items: center;
-				margin-bottom: 15px;
+	.rightbarTitle {
+		font-size: 18px;
+		font-weight: 500;
+		margin-bottom: 10px;
+	}
 
-				.rightbarProfileImageContainer {
-					margin-right: 10px;
-					position: relative;
-				}
+	.rightbarInfo {
+		margin-bottom: 30px;
 
-				.rightProfileImage {
-					width: 40px;
-					height: 40px;
-					border-radius: 50%;
-					object-fit: cover;
-				}
+		.rightbarInfoItem {
+			margin-bottom: 10px;
+		}
 
-				.rightbarOnline {
-					width: 12px;
-					height: 12px;
-					border-radius: 50%;
-					background-color: #00ff00;
-					position: absolute;
-					top: -2px;
-					right: 0px;
-					border: 1px solid #fff;
-				}
+		.rightbarInfoKey {
+			font-weight: 500;
+			marfin-right: 15px;
+			color: #555;
+		}
 
-				.rightbarFriendName {
-					font-size: 15px;
-					font-weight: 300;
-				}
-			}
+		.rightbarInfoValue {
+			font-weight: 300;
+			color: #777;
+		}
+	}
+
+	.rightbarFollowings {
+		display: flex;
+		align-content: flex-start;
+		flex-wrap: wrap;
+		justify-content: space-between;
+
+
+		.rightbarFollowing {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 20px;
+			curson: pointer;
+		}
+
+		.rightbarFollowingImage {
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+			border-radius: 5px;
+		}
+
+		.rightbarFollowingName {
+			text-align: center;
+			font-size: 12px;
+			font-weight: 200;
+			color: #555;
 		}
 	}
 `;
